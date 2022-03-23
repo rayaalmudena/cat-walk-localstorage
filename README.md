@@ -6,6 +6,8 @@ Tenemos un gato muy bailón que le gusta saber de las preferencias del usuario p
 
 Actualmente el gato siempre se mueve. Nunca para. Asocia dos eventos **click** a los botones de bailar y parar; para que el gato baile o pare. Piensa en qué variable de estado debes actualizar; y fíjate en las notas en **script.js** para comprobar dicha variable de estado.
 
+Ademas, haremos que la música solo suene cuando el gato baile. Modifica las variables de estado inicial para que al cargar la App; el gato esté parado. La música solo debe sonar mientras el gato baila.; y parar si el gato para.
+
 ## Ejercicio 2
 
 Utiliza localStorage para guardar el estado de movimiento del gato. Crea una propiedad localStorage.moveCat ; que valga true o false por ejemplo; y en función de dicho valor.
@@ -28,7 +30,7 @@ Similar al ejercicio 2, guarda el valor en el localStorage. Decide cómo se va a
 
 ## Ejercicio 5 - Controla el volumen de la música
 
-Implementa la funcionalidad que permita modificar el volumen del control **audio**. Debes actualizar la propiedad audio.volume con el valor del slider del control "Volumen Musica". 
+Implementa la funcionalidad que permita modificar el volumen del control **audio**. Debes actualizar la propiedad audio.volume con el valor del slider del control "Volumen Musica".
 
 De nuevo, guarda dicho valor en el localStorage cuando se actualice en el formulario; y cárgalo al iniciar la aplicación.
 
