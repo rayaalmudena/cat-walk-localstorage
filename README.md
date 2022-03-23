@@ -2,9 +2,9 @@
 
 Tenemos un gato muy bailón que le gusta saber de las preferencias del usuario para saber cómo y cuanto debe bailar.
 
-## Ejercicio 1 - ¡Para gato!
+## Ejercicio 1 - ¡Mover gato!¡Parar Gato!
 
-Actualmente el gato siempre se mueve. Nunca para. Asocia dos eventos **click** a los botones de bailar y parar; para que el gato baile o pare. Piensa en qué variable de estado debes actualizar; y fíjate en las notas en **script.js** para comprobar dicha variable de estado.
+Asocia dos eventos **click** a los botones de bailar y parar; para que el gato baile o pare. Piensa en qué variable de estado debes actualizar; y fíjate en las notas en **script.js** para comprobar dicha variable de estado.
 
 Ademas, haremos que la música solo suene cuando el gato baile. Modifica las variables de estado inicial para que al cargar la App; el gato esté parado. La música solo debe sonar mientras el gato baila.; y parar si el gato para.
 

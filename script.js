@@ -1,5 +1,5 @@
 // Estado de la APP
-let moveCat = true;
+let moveCat = false;
 let pixelsMove = 10;
 let volume = 0.5
 let walkForwards = true;
@@ -11,10 +11,26 @@ img.style.left = '0px';
 // Música!
 const audio = new Audio('./lambada.mp3');
 audio.volume = volume;
-audio.play();
 
 // escuchar evento submit de formulario
 document.querySelector("form").addEventListener("submit", procesarValoresFormulario);
+
+// evento click al botón Bailar!
+// Ejercicio 1
+
+// 1. Asociar el evento "click" al botón "Bailar"
+// 2. Actualizar la variable de estado 'moveCat' a true
+// 3. Ejecutar el método .play del objeto 'audio'
+
+
+
+// evento click al botón Parar!
+// Ejercicio 1
+
+// 1. Asociar el evento "click" al botón "Parar"
+// 2. Actualizar la variable de estado 'moveCat' a false
+// 3. Ejecutar el método .pause del objeto 'audio'
+
 
 function catWalk() {
 
@@ -22,9 +38,12 @@ function catWalk() {
 
     if (walkForwards && (currentLeft > (window.innerWidth - img.width))) {
         walkForwards = false;
+        img.style.transform = "rotateY(180deg)";
     }
     if (!walkForwards && (currentLeft <= 0)) {
         walkForwards = true;
+        img.style.transform = "";
+
     }
 
     // Ejercicio 4
@@ -55,5 +74,10 @@ function procesarValoresFormulario(event) {
 
 setInterval(function () {
     // Ejercicio 1: Comprobar una variable de estado aquí y hacer un return inmediatamente sería una buena opción; si dicha variable nos dice que el gato no debe moverse.
+
+    if (!moveCat) {
+        return;
+    }
+
     catWalk();
 }, 50);
