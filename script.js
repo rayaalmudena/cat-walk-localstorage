@@ -39,10 +39,11 @@ function catWalk() {
 
 function procesarValoresFormulario(event) {
 
+    // no 'recargues' la página
     event.preventDefault();
 
-    // acceder al primer input
-    const velocidad = parseInt(document.forms["catConf"].elements["velocidad"].value);
+    // acceder al input que tiene el name="velocidad"
+    const velocidad = document.forms["catConf"].elements["velocidad"].value;
     console.log("nueva velocidad", velocidad);
 
     // Ejercicio 4
