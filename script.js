@@ -9,7 +9,7 @@ const img = document.querySelector('img');
 img.style.left = '0px';
 
 // Música!
-const audio = document.querySelector('audio');
+const audio = new Audio('./lambada.mp3');
 audio.volume = volume;
 audio.play();
 
